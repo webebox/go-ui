@@ -1,0 +1,13 @@
+﻿:root {
+    --color1: #089DE3; /* Page Background */
+    --color3: #097054; /*  Borders / Outline */
+    --color7: #FFDE00; /* Selected Sidebar Menu */
+    --color8: #ffc107; /* Warning */
+    --color9: #007bff; /* Primary */
+    --color4: #F5F5F5; /* Breadcom / Sidebar*/
+    --color2: #333333; /* Text Color */
+    --color5: #fff; /* White */
+    --color6: #333; /* Black */
+    --size1: 1px; /* outlines */
+    --wallpaper: ""; /* Backgrounf Image */
+}
