@@ -1,84 +1,53 @@
-﻿// variable
-let a = 22, b, $ = 3, d = `hi`;
-a = 33;
-//console.log(a, b, $);
+﻿
+constructor() {
+    // Always call parent constructor first
+    super();
 
-// constant
-const c = 17;
-// c = 15;  raise error
-//console.log(c);
+    // Get template content from DOM
+    const template = document.getElementById("cool-timer");
+    const templateContent = template.content;
 
-// Template Strings
-let currentTemp = 19.5;
-const message = `The current temperature'""' is ${currentTemp}\u00b0C`;
-//console.log(message);
+    // Create new Shadow Root
+    const shadowRoot = this.attachShadow({ mode: "open" }).appendChild(
+        templateContent.cloneNode(true)
+    );
+}
 
-// null and undefined
-let a2;
-let b2 = null;
-b2 = 3;
-b2 = null;
-//console.log(a2, b2);
 
-// Objects
-const obj = {};
-obj.size = 1;
-obj["size"] = 2;
-//console.log(obj);
 
-// nested object
-let o2 = {
-    a: {
-        b: 2,
-        c: `3`,
-        d: {
-            e: `555`
-        }
+/* tab -----------------------------------------------------------------------------*/
+var goTabs = document.getElementsByClassName('go-tab');
+for (var i = 0; i < goTabs.length; i++) {
+    var goTabLinks = goTabs[i].children;
+    for (var j = 0; j < goTabLinks.length; j++) {
+        goTabLinks[j].addEventListener("click", function () {go_open_tab(event, this.getAttribute("go-tab-content"));});
     }
 }
-//console.log(o2, o2["a"].d["e"]);
 
-// objects with functions
-let o3 = {};
-o3.speak = function () { alert("Meow!"); };
-//o3.speak();
+function go_open_tab(e, cityName) {
+    var i, tabcontent, tablinks;
 
-// array
-const a3 = [1, 'two', 3, null, `ddd`];
-a3[0] = 4;
-//console.log(a3[0]);
-//console.log(a3[a3.length - 1]);
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("go-tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
 
-// Data Type Conversion
-const numStr = "33.3";
-const num = Number(numStr);
-const b4 = parseInt("3a", 16); // parse hexadecimal 3a; result is 58
-const c4 = parseFloat("15.5 kph"); // the " kph" is ignored; parseFloat
-const n4 = 33.5;
-const s4 = n4.toString();
-const t4 = Boolean(1 === 2); // false
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
 
-
-// Logic
-if (a === 7) { }
-
-// for - NOT INITIALIZED ARRAY
-const hand = [];
-for (let roll = 0; roll < 3; roll++) {
-    hand.push(roll);
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    e.currentTarget.className += " active";
 }
 
-// for 
-let i = 0;
-for (; i < hand.length; i++) {
-    // console.log(i);
-}
 
-// typeof
-console.log(typeof "", typeof true);
 
-// oneline if
-let label = 1 === 2 ? 'prime' : 'non-prime';
 
-// Converting if Statements to Short-Circuited Logical OR Expressions
-let options = a || '2'; // if a !== undefined  options = a othervise options = '2'
+
+
+// مهم
+// Mouse Wheel : https://alligator.io/js/speed-up-scroll-events/
