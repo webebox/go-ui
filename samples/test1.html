@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        html, body {
+            width: auto;
+            margin: 0;
+            overflow: hidden;
+            height:100%; /* full height page */
+        }
+
+        .container {
+            display: flex; /* or inline-flex */
+            flex-wrap: wrap; /* flex is wrap for other rows */
+            height: 100%; /* full height page */
+        }
+
+        .top {
+            background-color: red;
+            order: 1; /* order base on the layout design - it can be changed*/
+            width: 100%; /* full width */
+            height:32px; /* custom div height */
+        }
+
+        .left {
+            background-color: blue;
+            order: 2; /* order base on the layout design - it can be changed*/
+            flex: 1; /* width dimention */
+            flex-basis: 200px; /* min allowd with while shrink window */
+            height: calc(100% - 64px); /* calc the remaining height of full height */
+        }
+
+        .center {
+            background-color: yellow;
+            order: 3; /* order base on the layout design - it can be changed*/
+            flex: 10; /* width dimention */
+            flex-basis: auto; /* when shrink winsow its width is automatic */
+            height: calc(100% - 64px); /* calc the remaining height of full height */
+        }
+
+        .right {
+            background-color: green;
+            order: 4; /* order base on the layout design - it can be changed*/
+            flex: 1; /* width dimention */
+            flex-basis: 200px; /* min allowd with while shrink window */
+            /*height: calc(100% - 64px);*/ /* calc the remaining height of full height */
+        }
+
+        .bottom {
+            background-color: orange;
+            order: 5; /* order base on the layout design - it can be changed*/
+            width: 100%; /* full width */
+            height: 32px; /* custom div height */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item top">
+            top
+        </div>
+        <div class="item left">
+            left
+        </div>
+        <div class="item center">
+            center
+        </div>
+        <div class="item right">
+            right
+        </div>
+        <div class="item bottom">
+            bottom
+        </div>
+    </div>
+</body>
+</html>
