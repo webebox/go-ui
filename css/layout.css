@@ -1,53 +1,61 @@
 ﻿/* body -----------------------------------------------------------------------------*/
 
 html, body {
-    width: auto;
-    height: 100%;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
+    height: 100%; /* full height page */
+}
+
+/* page -----------------------------------------------------------------------------*/
+
+.go-rtl {
+    direction: rtl;
+    text-align: right;
 }
 
 /* layout -----------------------------------------------------------------------------*/
 
-div[go-layout] {
+.go-layout-container {
+    display: flex; /* or inline-flex */
+    flex-wrap: wrap;
+    height: 100%; /* full height page */
+}
+
+.go-layout-top {
+    background-color: red;
+    order: 1;
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 32px; /* custom div height */
 }
 
-    div[go-layout] > * div {
-        border: 1px solid #ddd;
-    }
-
-
-div[go-layout-top] {
-    height: 32px;
+.go-layout-left {
+    background-color: blue;
+    order: 2;
+    flex: 1; /* width dimention */
+    flex-basis: 200px; /* min allowd with while shrink window */
 }
 
-div[go-layout-bottom] {
-    height: 32px;
+.go-layout-center {
+    background-color: yellow;
+    order: 3;
+    flex: 10; /* width dimention */
+    flex-basis: 414px; /* min allowd with while shrink window */
+    height: calc(100% - 64px);
+    overflow-y: auto;
 }
 
-div[go-layout-body] {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
+.go-layout-right {
+    background-color: green;
+    order: 4;
+    flex: 1; /* width dimention */
+    flex-basis: 200px; /* min allowd with while shrink window */
 }
 
-div[go-layout-left] {
-   width:20%;
+.go-layout-bottom {
+    background-color: orange;
+    order: 5;
+    width: 100%;
+    height: 32px; /* custom div height */
 }
-
-div[go-layout-content] {
-    width: 60%;
-}
-
-div[go-layout-right] {
-    width: 20%;
-}
-
 
 
 

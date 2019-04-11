@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../css/layout.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="go-layout-container">
+        <div class="go-layout-top">
+            top
+        </div>
+        <div class="go-layout-content">
+            <div class="go-layout-left">
+                left
+            </div>
+            <div class="go-layout-center">
+                center
+            </div>
+            <!--<div class="go-layout-right">
+                right
+            </div>-->
+        </div>
+        <div class="go-layout-bottom">
+            bottom
+        </div>
+    </div>
+</body>
+</html>
