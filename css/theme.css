@@ -1,4 +1,7 @@
 ﻿:root {
+    --grid-row-gap : 3px;
+    --grid-column-gap : 10px;
+    /* ----------- */
     --color1: #089DE3; /* Page Background */
     --color3: #097054; /*  Borders / Outline */
     --color7: #FFDE00; /* Selected Sidebar Menu */
