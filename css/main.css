@@ -2,28 +2,302 @@
 
 html, body {
     margin: 0;
-    height: 100%; /* full height page */
+    height: 100%;
 }
+
+/* grid -----------------------------------------------------------------------------*/
 
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background: #676EE0;
+    height: 100%;
 }
 
 .row {
     display: flex;
-    flex: 1;
-    background: #67E079;
+    flex: auto;
 }
 
-.cell-1 {
-    flex: 1;
-    border: 1px solid #000;
+.row-1 {
+    display: flex;
+    height: 8.33vh;
 }
 
-.cell-5 {
+.row-2 {
+    display: flex;
+    height: 16.66vh;
+}
+
+.row-3 {
+    display: flex;
+    height: 25vh;
+}
+
+.row-4 {
+    display: flex;
+    height: 33.33vh;
+}
+
+.row-5 {
+    display: flex;
+    height: 41.66vh;
+}
+
+.row-6 {
+    display: flex;
+    height: 50vh;
+}
+
+.row-7 {
+    display: flex;
+    height: 58.33vh;
+}
+
+.row-8 {
+    display: flex;
+    height: 66.66vh;
+}
+
+.row-9 {
+    display: flex;
+    height: 75vh;
+}
+
+.row-10 {
+    display: flex;
+    height: 83.33vh;
+}
+
+.row-11 {
+    display: flex;
+    height: 91.665vh;
+}
+
+.row-12 {
+    display: flex;
+    height: 100vh;
+}
+
+.col {
+    flex: auto;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.col-3 {
+    flex: 3;
+}
+
+.col-4 {
+    flex: 4;
+}
+
+.col-5 {
     flex: 5;
-    border: 1px solid #000;
+}
+
+.col-6 {
+    flex: 6;
+}
+
+.col-7 {
+    flex: 7;
+}
+
+.col-8 {
+    flex: 8;
+}
+
+.col-9 {
+    flex: 9;
+}
+
+.col-10 {
+    flex: 10;
+}
+
+.col-11 {
+    flex: 11;
+}
+
+.col-12 {
+    flex: 12;
+}
+
+/*@media (min-width: 40em) and (max-width: 59em) {
+
+}*/
+
+
+/* alignment -----------------------------------------------------------------------------*/
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+/* opacity (fade) -----------------------------------------------------------------------------*/
+.fade-1 {
+    opacity: 0.1;
+}
+
+.fade-2 {
+    opacity: 0.2;
+}
+
+.fade-3 {
+    opacity: 0.3;
+}
+
+.fade-4 {
+    opacity: 0.4;
+}
+
+.fade-5 {
+    opacity: 0.5;
+}
+
+.fade-6 {
+    opacity: 0.6;
+}
+
+.fade-7 {
+    opacity: 0.7;
+}
+
+.fade-8 {
+    opacity: 0.8;
+}
+
+.fade-9 {
+    opacity: 0.9;
+}
+
+/* rotate -----------------------------------------------------------------------------*/
+.rotate-right-45 {
+    transform: rotate(45deg);
+}
+
+.rotate-right-90 {
+    transform: rotate(90deg);
+}
+
+.rotate-right-180 {
+    transform: rotate(180deg);
+}
+
+.rotate-left-45 {
+    transform: rotate(-45deg);
+}
+
+.rotate-left-90 {
+    transform: rotate(-90deg);
+}
+
+.rotate-left-180 {
+    transform: rotate(-180deg);
+}
+
+/* color -----------------------------------------------------------------------------*/
+.txt-color-1 {
+    color: var(--color1, white);
+}
+
+.txt-color-2 {
+    color: var(--color2, gray);
+}
+
+.txt-color-3 {
+    color: var(--color3, red);
+}
+
+.txt-color-4 {
+    color: var(--color4, yellow);
+}
+
+.txt-color-5 {
+    color: var(--color5, green);
+}
+
+.txt-color-6 {
+    color: var(--color6, blue);
+}
+
+.txt-color-7 {
+    color: var(--color7, silver);
+}
+
+.txt-color-8 {
+    color: var(--color8, navy);
+}
+
+.txt-color-9 {
+    color: var(--color9, black);
+}
+
+.bkg-color-1 {
+    background-color: var(--color1, white);
+}
+
+.bkg-color-2 {
+    background-color: var(--color2, gray);
+}
+
+.bkg-color-3 {
+    background-color: var(--color3, red);
+}
+
+.bkg-color-4 {
+    background-color: var(--color4, yellow);
+}
+
+.bkg-color-5 {
+    background-color: var(--color5, green);
+}
+
+.bkg-color-6 {
+    background-color: var(--color6, blue);
+}
+
+.bkg-color-7 {
+    background-color: var(--color7, silver);
+}
+
+.bkg-color-8 {
+    background-color: var(--color8, navy);
+}
+
+.bkg-color-9 {
+    background-color: var(--color9, black);
 }
