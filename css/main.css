@@ -16,6 +16,10 @@ html, body {
     flex: auto;
 }
 
+.row-custom {
+    display: flex;
+}
+
 .row-1 {
     display: flex;
     height: 8.33vh;
@@ -78,6 +82,10 @@ html, body {
 
 .col {
     flex: auto;
+}
+
+.col-custom {
+    flex:none;
 }
 
 .col-1 {
