@@ -266,73 +266,57 @@ html, body {
 
 /* color -----------------------------------------------------------------------------*/
 .txt-color-1 {
-    color: var(--color1, white);
+    color: var(--color1);
 }
 
 .txt-color-2 {
-    color: var(--color2, gray);
+    color: var(--color2);
 }
 
 .txt-color-3 {
-    color: var(--color3, red);
+    color: var(--color3);
 }
 
 .txt-color-4 {
-    color: var(--color4, yellow);
+    color: var(--color4);
 }
 
 .txt-color-5 {
-    color: var(--color5, green);
+    color: var(--color5);
 }
 
 .txt-color-6 {
-    color: var(--color6, blue);
+    color: var(--color6);
 }
 
 .txt-color-7 {
-    color: var(--color7, silver);
-}
-
-.txt-color-8 {
-    color: var(--color8, orange);
-}
-
-.txt-color-9 {
-    color: var(--color9, black);
+    color: var(--color7);
 }
 
 .bkg-color-1 {
-    background-color: var(--color1, white);
+    background-color: var(--color1);
 }
 
 .bkg-color-2 {
-    background-color: var(--color2, gray);
+    background-color: var(--color2);
 }
 
 .bkg-color-3 {
-    background-color: var(--color3, red);
+    background-color: var(--color3);
 }
 
 .bkg-color-4 {
-    background-color: var(--color4, yellow);
+    background-color: var(--color4);
 }
 
 .bkg-color-5 {
-    background-color: var(--color5, green);
+    background-color: var(--color5);
 }
 
 .bkg-color-6 {
-    background-color: var(--color6, blue);
+    background-color: var(--color6);
 }
 
 .bkg-color-7 {
-    background-color: var(--color7, silver);
-}
-
-.bkg-color-8 {
-    background-color: var(--color8, navy);
-}
-
-.bkg-color-9 {
-    background-color: var(--color9, black);
+    background-color: var(--color7);
 }
