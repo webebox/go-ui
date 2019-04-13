@@ -1,6 +1,5 @@
 # go-ui
 Modern Web UI Framework
 
-#### no scroll web page design.
-#### flex grid.
+#### bidirectional grid system (row grid and column grid)
 #### lots of css helpers.

@@ -9,6 +9,7 @@ html, body {
 .container {
     display: flex;
     flex-direction: column;
+    flex-wrap:wrap;
     height: 100%;
     overflow: hidden;
 }
@@ -98,12 +99,10 @@ html, body {
 
 .col {
     flex: auto;
-    overflow-y: auto;
 }
 
 .col-custom {
     flex: none;
-    overflow-y: auto;
 }
 
 .col-1 {
@@ -118,52 +117,42 @@ html, body {
 
 .col-3 {
     flex: 3;
-    overflow-y: auto;
 }
 
 .col-4 {
     flex: 4;
-    overflow-y: auto;
 }
 
 .col-5 {
     flex: 5;
-    overflow-y: auto;
 }
 
 .col-6 {
     flex: 6;
-    overflow-y: auto;
 }
 
 .col-7 {
     flex: 7;
-    overflow-y: auto;
 }
 
 .col-8 {
     flex: 8;
-    overflow-y: auto;
 }
 
 .col-9 {
     flex: 9;
-    overflow-y: auto;
 }
 
 .col-10 {
     flex: 10;
-    overflow-y: auto;
 }
 
 .col-11 {
     flex: 11;
-    overflow-y: auto;
 }
 
 .col-12 {
     flex: 12;
-    overflow-y: auto;
 }
 
 .left {
@@ -194,6 +183,10 @@ html, body {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+}
+
+.overflow-y {
+    overflow-y: auto;
 }
 
 /*@media (min-width: 40em) and (max-width: 59em) {
