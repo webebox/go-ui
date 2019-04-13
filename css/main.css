@@ -2,6 +2,7 @@
 html, body {
     margin: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 /* grid -----------------------------------------------------------------------------*/
@@ -9,75 +10,90 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
 }
 
 .row {
     display: flex;
     flex: auto;
+    overflow: hidden;
 }
 
 .row-custom {
     display: flex;
+    overflow: hidden;
 }
 
 .row-1 {
     display: flex;
     height: 8.33vh;
+    overflow: hidden;
 }
 
 .row-2 {
     display: flex;
     height: 16.66vh;
+    overflow: hidden;
 }
 
 .row-3 {
     display: flex;
     height: 25vh;
+    overflow: hidden;
 }
 
 .row-4 {
     display: flex;
     height: 33.33vh;
+    overflow: hidden;
 }
 
 .row-5 {
     display: flex;
     height: 41.66vh;
+    overflow: hidden;
 }
 
 .row-6 {
     display: flex;
     height: 50vh;
+    overflow: hidden;
 }
 
 .row-7 {
     display: flex;
     height: 58.33vh;
+    overflow: hidden;
 }
 
 .row-8 {
     display: flex;
     height: 66.66vh;
+    overflow: hidden;
 }
 
 .row-9 {
     display: flex;
     height: 75vh;
+    overflow: hidden;
 }
 
 .row-10 {
     display: flex;
     height: 83.33vh;
+    overflow: hidden;
 }
 
 .row-11 {
     display: flex;
     height: 91.665vh;
+    overflow: hidden;
 }
 
 .row-12 {
     display: flex;
     height: 100vh;
+    overflow: hidden;
 }
 
 .col {
@@ -85,7 +101,7 @@ html, body {
 }
 
 .col-custom {
-    flex:none;
+    flex: none;
 }
 
 .col-1 {
@@ -142,15 +158,15 @@ html, body {
 
 /* alignment -----------------------------------------------------------------------------*/
 .left {
-    text-align: left;
+    justify-content: flex-start;
 }
 
 .center {
-    text-align: center;
+    justify-content: center;
 }
 
 .right {
-    text-align: right;
+    justify-content: flex-end;
 }
 
 .top {
@@ -169,6 +185,18 @@ html, body {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
 }
 
 /* opacity (fade) -----------------------------------------------------------------------------*/
