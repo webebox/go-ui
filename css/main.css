@@ -5,96 +5,42 @@ html, body {
     overflow: hidden;
 }
 
+
+/*container
+row fill
+col md-1 , sm-3 , lg-5*/
+
+
 /* grid -----------------------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    flex-wrap:wrap;
-    height: 100%;
+    overflow: hidden;
+}
+
+.fit {
+    height: 100% !important;
+}
+
+[class*="row-"], .row {
+    display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
 .row {
-    display: flex;
     flex: auto;
-    overflow: hidden;
 }
 
-.row-custom {
-    display: flex;
-    overflow: hidden;
+.fill {
+    height: 100% !important;
 }
 
-.row-1 {
-    display: flex;
-    height: 8.33vh;
-    overflow: hidden;
-}
-
-.row-2 {
-    display: flex;
-    height: 16.66vh;
-    overflow: hidden;
-}
-
-.row-3 {
-    display: flex;
-    height: 25vh;
-    overflow: hidden;
-}
-
-.row-4 {
-    display: flex;
-    height: 33.33vh;
-    overflow: hidden;
-}
-
-.row-5 {
-    display: flex;
-    height: 41.66vh;
-    overflow: hidden;
-}
-
-.row-6 {
-    display: flex;
-    height: 50vh;
-    overflow: hidden;
-}
-
-.row-7 {
-    display: flex;
-    height: 58.33vh;
-    overflow: hidden;
-}
-
-.row-8 {
-    display: flex;
-    height: 66.66vh;
-    overflow: hidden;
-}
-
-.row-9 {
-    display: flex;
-    height: 75vh;
-    overflow: hidden;
-}
-
-.row-10 {
-    display: flex;
-    height: 83.33vh;
-    overflow: hidden;
-}
-
-.row-11 {
-    display: flex;
-    height: 91.665vh;
-    overflow: hidden;
-}
-
-.row-12 {
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
+[class*="col-"], .col {
 }
 
 .col {
@@ -107,12 +53,10 @@ html, body {
 
 .col-1 {
     flex: 1;
-    overflow-y: auto;
 }
 
 .col-2 {
     flex: 2;
-    overflow-y: auto;
 }
 
 .col-3 {
@@ -123,37 +67,6 @@ html, body {
     flex: 4;
 }
 
-.col-5 {
-    flex: 5;
-}
-
-.col-6 {
-    flex: 6;
-}
-
-.col-7 {
-    flex: 7;
-}
-
-.col-8 {
-    flex: 8;
-}
-
-.col-9 {
-    flex: 9;
-}
-
-.col-10 {
-    flex: 10;
-}
-
-.col-11 {
-    flex: 11;
-}
-
-.col-12 {
-    flex: 12;
-}
 
 .left {
     justify-content: flex-start;
@@ -189,9 +102,44 @@ html, body {
     overflow-y: auto;
 }
 
-/*@media (min-width: 40em) and (max-width: 59em) {
+@media only screen and (max-width: 768px) {
+    .sm-1 {
+        width: 10%;
+    }
 
-}*/
+    .sm-2 {
+        width: 20%;
+    }
+
+    .sm-3 {
+        width: 30%;
+    }
+
+    .sm-4 {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .small {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .medium {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .large {
+        flex: none;
+        width: 100%;
+    }
+}
 
 /* text alignment -----------------------------------------------------------------------------*/
 .txt-left {
@@ -265,58 +213,74 @@ html, body {
 }
 
 /* color -----------------------------------------------------------------------------*/
-.txt-color-1 {
-    color: var(--color1);
+.txt-color-muted {
+    color: var(--color-muted);
 }
 
-.txt-color-2 {
-    color: var(--color2);
+.txt-color-primary {
+    color: var(--color-primary);
 }
 
-.txt-color-3 {
-    color: var(--color3);
+.txt-color-success {
+    color: var(--color-success);
 }
 
-.txt-color-4 {
-    color: var(--color4);
+.txt-color-info {
+    color: var(--color-info);
 }
 
-.txt-color-5 {
-    color: var(--color5);
+.txt-color-warning {
+    color: var(--color-warning);
 }
 
-.txt-color-6 {
-    color: var(--color6);
+.txt-color-danger {
+    color: var(--color-danger);
 }
 
-.txt-color-7 {
-    color: var(--color7);
+.txt-color-secondary {
+    color: var(--color-secondary);
 }
 
-.bkg-color-1 {
-    background-color: var(--color1);
+.txt-color-dark {
+    color: var(--color-dark);
 }
 
-.bkg-color-2 {
-    background-color: var(--color2);
+.txt-color-body {
+    color: var(--color-body);
 }
 
-.bkg-color-3 {
-    background-color: var(--color3);
+.txt-color-light {
+    color: var(--color-light);
 }
 
-.bkg-color-4 {
-    background-color: var(--color4);
+.bkg-color-primary {
+    background-color: var(--color-primary);
 }
 
-.bkg-color-5 {
-    background-color: var(--color5);
+.bkg-color-success {
+    background-color: var(--color-success);
 }
 
-.bkg-color-6 {
-    background-color: var(--color6);
+.bkg-color-info {
+    background-color: var(--color-info);
 }
 
-.bkg-color-7 {
-    background-color: var(--color7);
+.bkg-color-warning {
+    background-color: var(--color-warning);
+}
+
+.bkg-color-danger {
+    background-color: var(--color-danger);
+}
+
+.bkg-color-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bkg-color-dark {
+    background-color: var(--color-dark);
+}
+
+.bkg-color-light {
+    background-color: var(--color-light);
 }
