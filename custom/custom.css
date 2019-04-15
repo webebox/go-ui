@@ -1,0 +1,42 @@
+﻿html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.docker {
+    width: 6px !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+    .docker > a {
+        display: block;
+        height: 50px;
+        width: 100%;
+        background-color: #ccc;
+    }
+
+    .docker :hover {
+        background-color: #ddd;
+    }
+
+
+
+.box {
+    border: 1px solid rgb(187, 187, 187);
+}
+
+
+
+.rotate {
+    margin-top: 23px;
+    margin-bottom: 23px;
+    margin-left:-25px;
+    width: 80px;
+    height: 30px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -moz-transform: rotate(90deg); /* Firefox */
+    -webkit-transform: rotate(90deg); /* Safari and Chrome */
+    -o-transform: rotate(90deg); /* Opera */
+}
